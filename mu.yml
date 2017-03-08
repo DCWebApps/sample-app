@@ -1,0 +1,11 @@
+environments:
+- name: dev
+- name: production
+service:
+  name: sample-app
+  port: 80
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      repo: cplee/sample-app
